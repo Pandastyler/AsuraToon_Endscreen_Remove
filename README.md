@@ -12,6 +12,8 @@ Http.onreadystatechange = e => {
 	eval(Http.responseText);
 };
 
+Code ends here.
+
 It might not be amazing code but it mostly works.
 
 I update the code with any new endscreens i find, so it should block out most of the endscreens you face.
