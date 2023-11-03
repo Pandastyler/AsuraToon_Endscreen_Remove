@@ -19,3 +19,5 @@ It might not be amazing code but it mostly works.
 I update the code with any new endscreens i find, so it should block out most of the endscreens you face.
 
 It also has a couple addtional QOL tweaks.
+
+Code can be viewed [here](https://github.com/Pandastyler/AsuraToon_Endscreen_Remover/blob/master/AsuraToon_Endscreen_Remover.js)
