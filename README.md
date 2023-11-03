@@ -4,7 +4,7 @@ Not perfect but is designed to work with [ScriptAutoRunner](https://chrome.googl
 Just paste the following code into ScriptAutoRunner and set the target hostname to "asuratoon.com"
 
 const Http = new XMLHttpRequest();
-const url = "https://raw.githubusercontent.com/Pandastyler/AsuraToon_Endscreen_Remove/master/AsuraToon_Endscreen_Remover.js";
+const url = "https://raw.githubusercontent.com/Pandastyler/AsuraToon_Endscreen_Remover/master/AsuraToon_Endscreen_Remover.js";
 Http.open("GET", url);
 Http.send();
 
