@@ -21,3 +21,5 @@ I update the code with any new endscreens i find, so it should block out most of
 It also has a couple addtional QOL tweaks.
 
 Code can be viewed [here](https://github.com/Pandastyler/AsuraToon_Endscreen_Remover/blob/master/AsuraToon_Endscreen_Remover.js)
+
+This doesn't remove the "we caught up to raws" as some may want to keep it.
