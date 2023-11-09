@@ -1,13 +1,17 @@
+const currentPost = document.querySelector("#content > div > div > div").firstElementChild;
 for (let i = 0; i < 51; i++) {
 	// Main loop
-	const foundElement = document.querySelector(`#readerarea > p:nth-child(${i}) > a`);
-	const otherElements = document.querySelector(`#readerarea > p:nth-child(${i}) > img`).src.includes("EndDesignPSD02");
-	const otherElement = document.querySelector(`#readerarea > p:nth-child(${i}) > img`);
-	if (foundElement) {
-		foundElement.parentElement.remove();
+	const selector = `#readerarea > p:nth-child(${i}) > img`;
+	const foundElement = document.querySelector(selector);
+	const other = document.querySelector(`#readerarea > p:nth-child(${i}) > a`);
+	if (other) {
+		other.parentElement.remove();
 	}
-	if (otherElements) {
-		otherElement.remove()
+    if (foundElement) {
+		if (foundElement.outerHTML.includes("EndDesignPSD02")) {
+			foundElement.parentElement.remove()
+		}
+		
 	}
 }
 for (let i = 0; i < 51; i++) {
@@ -15,7 +19,6 @@ for (let i = 0; i < 51; i++) {
 	if (document.querySelector("#readerarea > a")) {
 		document.querySelector("#readerarea > a").remove();
 	}
-	const currentPost = document.querySelector("#content > div > div > div").firstElementChild;
 	const PatreonAd = currentPost.querySelector(
 		"div.entry-content.entry-content-single.maincontent > a"
 	);
