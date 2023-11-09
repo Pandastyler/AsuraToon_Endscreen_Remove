@@ -1,3 +1,4 @@
+const currentPost = document.querySelector("#content > div > div > div").firstElementChild;
 for (let i = 0; i < 51; i++) {
 	// Main loop
 	const selector = `#readerarea > p:nth-child(${i}) > img`;
@@ -6,13 +7,18 @@ for (let i = 0; i < 51; i++) {
 	if (other) {
 		other.parentElement.remove();
 	}
+    if (foundElement) {
+		if (foundElement.outerHTML.includes("EndDesignPSD02")) {
+			foundElement.parentElement.remove()
+		}
+		
+	}
 }
 for (let i = 0; i < 51; i++) {
 	// Additional loop for extras
 	if (document.querySelector("#readerarea > a")) {
 		document.querySelector("#readerarea > a").remove();
 	}
-	const currentPost = document.querySelector("#content > div > div > div").firstElementChild;
 	const PatreonAd = currentPost.querySelector(
 		"div.entry-content.entry-content-single.maincontent > a"
 	);
