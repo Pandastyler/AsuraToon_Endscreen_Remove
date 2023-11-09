@@ -1,10 +1,13 @@
 for (let i = 0; i < 51; i++) {
 	// Main loop
-	const selector = `#readerarea > p:nth-child(${i}) > img`;
-	const foundElement = document.querySelector(selector);
-	const other = document.querySelector(`#readerarea > p:nth-child(${i}) > a`);
-	if (other) {
-		other.parentElement.remove();
+	const foundElement = document.querySelector(`#readerarea > p:nth-child(${i}) > a`);
+	const otherElements = document.querySelector(`#readerarea > p:nth-child(${i}) > img`).src.includes("EndDesignPSD02");
+	const otherElement = document.querySelector(`#readerarea > p:nth-child(${i}) > img`);
+	if (foundElement) {
+		foundElement.parentElement.remove();
+	}
+	if (otherElements) {
+		otherElement.remove()
 	}
 }
 for (let i = 0; i < 51; i++) {
