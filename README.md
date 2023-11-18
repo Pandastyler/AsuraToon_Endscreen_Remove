@@ -22,4 +22,4 @@ Code can be viewed [here](https://github.com/Pandastyler/AsuraToon_Endscreen_Rem
 
 This doesn't remove the "we caught up to raws" as some may want to keep it.
 
-Also has additional stuff that it does but i wont note it here, [read it yourself](https://github.com/Pandastyler/AsuraToon_Endscreen_Remover/blob/main/AsuraToon_Endscreen_Remover.js) if you want to.
+Also has additional stuff that it does but i wont note it here, [read the code yourself](https://github.com/Pandastyler/AsuraToon_Endscreen_Remover/blob/main/AsuraToon_Endscreen_Remover.js) if you want to find it.
