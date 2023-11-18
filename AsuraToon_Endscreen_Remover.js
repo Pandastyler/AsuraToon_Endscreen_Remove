@@ -34,4 +34,22 @@ for (let i = 0; i < 51; i++) {
 			)
 			.remove();
 	}
+	if (document.querySelector("#chapter")) {
+		document.querySelector("#chapter").width = 85
+		document.querySelector("#chapter").height = 17
+	}
 }
+function changeWidth() {
+   	// Sets the size of the chapter navigator at the bottom of the page to be a set length because it sometimes gets really long with named chapters
+	var xpath = "/html/body/div[4]/div/div/div/article/div[4]/div[6]/span[1]/div/select";  
+    var element = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+
+    if (element) {
+        element.style.width = '107px';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    setTimeout(changeWidth, 1);
+});
