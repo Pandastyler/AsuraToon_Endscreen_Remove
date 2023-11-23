@@ -45,7 +45,7 @@ function changeWidth() {
     var element = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
 
     if (element) {
-        element.style.width = '107px';
+        element.style.width = '112px';
     }
 }
 
