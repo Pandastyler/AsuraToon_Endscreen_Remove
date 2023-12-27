@@ -49,7 +49,7 @@ for (let i = 0; i < 51; i++) {
 setTimeout(function changeWidth() {
 	// Find all elements with the ID "chapter"
 	const chapterElements = document.querySelectorAll("#chapter");
-  
+	const nextElement = document.querySelector("#post-46510 > div.entry-content.entry-content-single.maincontent > div.chnav.cbot > div")
 	// Check if the second element exists
 	if (chapterElements.length >= 2) {
 	  // Select the second element (index 1, as indexing starts from 0)
@@ -57,12 +57,14 @@ setTimeout(function changeWidth() {
   
 	  // Clone the second chapter element
 	  const clonedChapterElement = secondChapterElement.cloneNode(true);
-  
+	  const clonedNextElement = nextElement.cloneNode(true)
 	  // Set the width of the cloned element to 112 pixels
 	  clonedChapterElement.style.width = '112px';
-  
+	  clonedNextElement.style.width = '900px'
 	  // Replace the second chapter element with the modified clone
 	  secondChapterElement.parentNode.replaceChild(clonedChapterElement, secondChapterElement);
+	  clonedNextElement.parentNode.replaceChild(clonedNextElement, nextElement)
 	}
+	
   }, 1000); // 1000 milliseconds = 1 second
   
