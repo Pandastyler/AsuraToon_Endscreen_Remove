@@ -66,5 +66,5 @@ setTimeout(function changeWidth() {
 	  nextElement.parentNode.replaceChild(clonedNextElement, nextElement)
 	}
 	
-  }, 1000); // 1000 milliseconds = 1 second
+  }, 5000); // 1000 milliseconds = 1 second
   
