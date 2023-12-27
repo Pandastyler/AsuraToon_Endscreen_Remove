@@ -61,10 +61,9 @@ setTimeout(function changeWidth() {
 	  // Set the width of the cloned element to 112 pixels
 	  clonedChapterElement.style.width = '112px';
 	  clonedNextElement.style.width = '900px'
-	  clonedNextElement.nodeName = "tasdasdy"
 	  // Replace the second chapter element with the modified clone
 	  secondChapterElement.parentNode.replaceChild(clonedChapterElement, secondChapterElement);
-	  clonedNextElement.parentNode.replaceChild(clonedNextElement, nextElement)
+	  NextElement.parentNode.replaceChild(clonedNextElement, nextElement)
 	}
 	
   }, 1000); // 1000 milliseconds = 1 second
