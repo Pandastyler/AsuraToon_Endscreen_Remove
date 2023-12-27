@@ -13,11 +13,10 @@ for (let i = 0; i < 51; i++) {
 	if (other) {
 		other.parentElement.remove();
 	}
-    if (foundElement) {
+	if (foundElement) {
 		if (foundElement.outerHTML.includes("EndDesignPSD02")) {
-			foundElement.parentElement.remove()
+			foundElement.parentElement.remove();
 		}
-		
 	}
 }
 for (let i = 0; i < 51; i++) {
@@ -41,8 +40,8 @@ for (let i = 0; i < 51; i++) {
 			.remove();
 	}
 	if (document.querySelector("#chapter")) {
-		document.querySelector("#chapter").width = 85
-		document.querySelector("#chapter").height = 17
+		document.querySelector("#chapter").width = 85;
+		document.querySelector("#chapter").height = 17;
 	}
 }
 
@@ -51,17 +50,15 @@ setTimeout(function changeWidth() {
 	const chapterElements = document.querySelectorAll("#chapter");
 	// Check if the second element exists
 	if (chapterElements.length >= 2) {
-	  // Select the second element (index 1, as indexing starts from 0)
-	  const secondChapterElement = chapterElements[1];
-  
-	  // Clone the second chapter element
-	  const clonedChapterElement = secondChapterElement.cloneNode(true);
-	  // Set the width of the cloned element to 112 pixels
-	  clonedChapterElement.style.width = '112px';
-	  clonedNextElement.style.width = '900px'
-	  // Replace the second chapter element with the modified clone
-	  secondChapterElement.parentNode.replaceChild(clonedChapterElement, secondChapterElement);
+		// Select the second element (index 1, as indexing starts from 0)
+		const secondChapterElement = chapterElements[1];
+
+		// Clone the second chapter element
+		const clonedChapterElement = secondChapterElement.cloneNode(true);
+		// Set the width of the cloned element to 112 pixels
+		clonedChapterElement.style.width = "112px";
+		clonedNextElement.style.width = "900px";
+		// Replace the second chapter element with the modified clone
+		secondChapterElement.parentNode.replaceChild(clonedChapterElement, secondChapterElement);
 	}
-	
-  }, 3000); // 1000 milliseconds = 1 second
-  
+}, 3000); // 1000 milliseconds = 1 second
