@@ -57,7 +57,6 @@ setTimeout(function changeWidth() {
 		const clonedChapterElement = secondChapterElement.cloneNode(true);
 		// Set the width of the cloned element to 112 pixels
 		clonedChapterElement.style.width = "112px";
-		clonedNextElement.style.width = "900px";
 		// Replace the second chapter element with the modified clone
 		secondChapterElement.parentNode.replaceChild(clonedChapterElement, secondChapterElement);
 	}
