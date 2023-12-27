@@ -49,7 +49,7 @@ for (let i = 0; i < 51; i++) {
 setTimeout(function changeWidth() {
 	// Find all elements with the ID "chapter"
 	const chapterElements = document.querySelectorAll("#chapter");
-	const nextElement = document.querySelector("#post-46510 > div.entry-content.entry-content-single.maincontent > div.chnav.cbot > div")
+	const nextElement = document.querySelector(currentPost + " > div.entry-content.entry-content-single.maincontent > div.chnav.cbot > div")
 	// Check if the second element exists
 	if (chapterElements.length >= 2) {
 	  // Select the second element (index 1, as indexing starts from 0)
