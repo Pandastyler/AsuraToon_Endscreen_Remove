@@ -39,17 +39,3 @@ for (let i = 0; i < 51; i++) {
 		document.querySelector("#chapter").height = 17
 	}
 }
-function changeWidth() {
-   	// Sets the size of the chapter navigator at the bottom of the page to a set length
-	var xpath = "/html/body/div[4]/div/div/div/article/div[4]/div[6]/span[1]/div/select";  
-    // var element = document.evaluate(xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-	var element = document.getElementById("chapter")
-    if (element) {
-        element.style.width = '112px';
-    }
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    
-    setTimeout(changeWidth, 2);
-});
