@@ -63,7 +63,7 @@ setTimeout(function changeWidth() {
 	  clonedNextElement.style.width = '900px'
 	  // Replace the second chapter element with the modified clone
 	  secondChapterElement.parentNode.replaceChild(clonedChapterElement, secondChapterElement);
-	  NextElement.parentNode.replaceChild(clonedNextElement, nextElement)
+	  nextElement.parentNode.replaceChild(clonedNextElement, nextElement)
 	}
 	
   }, 1000); // 1000 milliseconds = 1 second
