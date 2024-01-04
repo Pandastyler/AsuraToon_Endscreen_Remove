@@ -60,4 +60,9 @@ setTimeout(function changeWidth() {
 		// Replace the second chapter element with the modified clone
 		secondChapterElement.parentNode.replaceChild(clonedChapterElement, secondChapterElement);
 	}
+	// Use the function for other things
+	document.querySelector("body > div.code-block.code-block-19 > a > img").parentElement.parentElement.remove() // delete a new ad added on new years, may get removed later
+
+
+
 }, 3000); // 1000 milliseconds = 1 second
