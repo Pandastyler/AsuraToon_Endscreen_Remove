@@ -63,11 +63,18 @@ setTimeout(function changeWidth_misc3() {
 // Use the function for other things
 
 
+document.querySelector("body > div.code-block.code-block-19 > a > img").parentElement.parentElement.remove() // Same as 72 and 78
 
 }, 3000); // 1000 milliseconds = 1 second
 
 setTimeout(function misc1() {
 
-	document.querySelector("body > div.code-block.code-block-19 > a > img").parentElement.parentElement.remove() // delete a new ad added on new years, may get removed later. Maybe added to uBlock list in readme later since load times are inconsistent.
+	document.querySelector("body > div.code-block.code-block-19 > a > img").parentElement.parentElement.remove() // Same as 66 and 78
 
 }, 1000);
+
+setTimeout(function misc1() {
+
+	document.querySelector("body > div.code-block.code-block-19 > a > img").parentElement.parentElement.remove() // Same as 66 and 72
+
+}, 2000);
