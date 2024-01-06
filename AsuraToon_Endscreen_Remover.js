@@ -2,7 +2,7 @@
 // So just ignore bad readability and obvious comments
 
 // You can just rip the code from here onto your own repo to mod it if you want
-// Just remember to change the url in the ScriptAutoRunner code
+// just remember to change the url in the ScriptAutoRunner code.
 
 const currentPost = document.querySelector("#content > div > div > div").firstElementChild;
 for (let i = 0; i < 51; i++) {
@@ -45,6 +45,13 @@ for (let i = 0; i < 51; i++) {
 	}
 }
 
+
+function TimeoutRemoves() {
+	document.querySelector("body > div.code-block.code-block-21").remove();
+	document.querySelector("body > div.code-block.code-block-19 > a > img").parentElement.parentElement.remove();
+
+}
+
 setTimeout(function changeWidth_misc3() {
 	// Find all elements with the ID "chapter"
 	const chapterElements = document.querySelectorAll("#chapter");
@@ -63,18 +70,18 @@ setTimeout(function changeWidth_misc3() {
 // Use the function for other things
 
 
-document.querySelector("body > div.code-block.code-block-19 > a > img").parentElement.parentElement.remove() // Same as 72 and 78
+	TimeoutRemoves()
 
 }, 3000); // 1000 milliseconds = 1 second
 
 setTimeout(function misc1() {
 
-	document.querySelector("body > div.code-block.code-block-19 > a > img").parentElement.parentElement.remove() // Same as 66 and 78
+	TimeoutRemoves()
 
 }, 1000);
 
 setTimeout(function misc1() {
 
-	document.querySelector("body > div.code-block.code-block-19 > a > img").parentElement.parentElement.remove() // Same as 66 and 72
+	TimeoutRemoves()
 
 }, 2000);
