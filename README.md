@@ -1,4 +1,8 @@
 # AsuraToon_Endscreen_Remover
+
+NO LONGER MAINTAINED / PROBABLY NOT WORKING
+
+
 Designed to work with [ScriptAutoRunner](https://chrome.google.com/webstore/detail/scriptautorunner/gpgjofmpmjjopcogjgdldidobhmjmdbm)
 
 Just paste the following code into ScriptAutoRunner and set the target hostname to "asuratoon.com"
